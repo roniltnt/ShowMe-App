@@ -8,5 +8,5 @@ object Constants {
     const val USER_LOCATION = "UserLocation"
     const val EVENT_LOCATION = "EventLocation"
 
-    const val YOUTUBE_API_KEY = "AIzaSyBCHciwoD-USkIIplN_hi7RratZYIOhuD4"
+    const val YOUTUBE_API_KEY = "SomeSuperSecretKey"
 }
