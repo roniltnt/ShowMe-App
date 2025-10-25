@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">ShowMe</string>
+    <string name="events">Events</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+    <string name="favorites">Favorites</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account_register">Don\'t have an account? Register</string>
+    <string name="create_account">Create Account</string>
+    <string name="username">Username</string>
+    <string name="register">Register</string>
+    <string name="already_have_an_account_login">Already have an account? Login</string>
+    <string name="new_password">New Password</string>
+    <string name="my_favorites">My Favorites</string>
+    <string name="no_favorites_added">No favorites added</string>
+    <string name="you_haven_t_added_any_favorites_yet">You haven\'t added any favorites yet</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="email_form">user@email.com</string>
+    <string name="log_out">Log Out</string>
+    <string name="select_date">Select Date</string>
+    <string name="search_for_artists_events_or_locations">Search for artists, events or locations!</string>
+    <string name="no_results_found">No results found</string>
+    <string name="event_name">Event Name</string>
+    <string name="event_date">Event Date</string>
+    <string name="event_location">Event Location</string>
+    <string name="tickets">Tickets</string>
+    <string name="directions">Directions</string>
+    <string name="playlist">Playlist</string>
+    <string name="share">Share</string>
+</resources>

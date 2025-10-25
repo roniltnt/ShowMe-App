@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="@dimen/default_padding"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    android:gravity="center_vertical"
+    tools:theme="@style/Theme.ShowMe">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_account"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+        android:textColor="?attr/colorOnBackground"
+        android:layout_marginBottom="@dimen/default_margin_bottom"
+        android:layout_gravity="center_horizontal"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:hint="@string/username"
+        app:boxBackgroundColor="?attr/colorSurface"
+        app:boxCornerRadiusTopStart="@dimen/default_radius"
+        app:boxCornerRadiusTopEnd="@dimen/default_radius"
+        app:boxCornerRadiusBottomStart="@dimen/default_radius"
+        app:boxCornerRadiusBottomEnd="@dimen/default_radius"
+        app:boxStrokeWidth="@dimen/no_margin"
+        app:boxStrokeWidthFocused="@dimen/no_margin">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:hint="@string/email"
+        app:boxBackgroundColor="?attr/colorSurface"
+        app:boxCornerRadiusTopStart="@dimen/default_radius"
+        app:boxCornerRadiusTopEnd="@dimen/default_radius"
+        app:boxCornerRadiusBottomStart="@dimen/default_radius"
+        app:boxCornerRadiusBottomEnd="@dimen/default_radius"
+        app:boxStrokeWidth="@dimen/no_margin"
+        app:boxStrokeWidthFocused="@dimen/no_margin">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/default_margin_bottom"
+        android:hint="@string/password"
+        app:endIconMode="password_toggle"
+        app:boxBackgroundColor="?attr/colorSurface"
+        app:boxCornerRadiusTopStart="@dimen/default_radius"
+        app:boxCornerRadiusTopEnd="@dimen/default_radius"
+        app:boxCornerRadiusBottomStart="@dimen/default_radius"
+        app:boxCornerRadiusBottomEnd="@dimen/default_radius"
+        app:boxStrokeWidth="@dimen/no_margin"
+        app:boxStrokeWidthFocused="@dimen/no_margin">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:text="@string/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/default_radius"
+        app:cornerRadius="@dimen/default_radius" />
+
+    <Button
+        android:id="@+id/btnGoToLogin"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:text="@string/already_have_an_account_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:textAllCaps="false"
+        android:textColor="?android:attr/textColorSecondary" />
+
+</LinearLayout>

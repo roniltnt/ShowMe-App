@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    tools:theme="@style/Theme.ShowMe">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutSearch"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        app:boxBackgroundColor="?attr/colorSurface"
+        app:boxCornerRadiusTopStart="@dimen/default_radius"
+        app:boxCornerRadiusTopEnd="@dimen/default_radius"
+        app:boxCornerRadiusBottomStart="@dimen/default_radius"
+        app:boxCornerRadiusBottomEnd="@dimen/default_radius"
+        app:boxStrokeWidth="@dimen/no_margin"
+        app:boxStrokeWidthFocused="@dimen/no_margin"
+        app:startIconDrawable="@drawable/ic_search_24"
+        app:startIconTint="?android:attr/textColorSecondary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionSearch"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/default_margin">
+
+        <Button
+            android:id="@+id/buttonPickDate"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="@dimen/no_margin"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/select_date"
+            app:cornerRadius="@dimen/default_radius" />
+        <ImageButton
+            android:id="@+id/buttonClearDate"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_close_24"
+            app:tint="?android:attr/textColorSecondary"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/initialSearchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/no_margin"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="@dimen/default_margin_bottom"
+        android:visibility="gone"> <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_search_24"
+        app:tint="?android:attr/textColorSecondary"
+        android:layout_marginBottom="@dimen/default_margin"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search_for_artists_events_or_locations"
+            android:textColor="?android:attr/textColorSecondary"
+            android:textSize="16sp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/searchStatusLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/default_margin_bottom"
+        android:paddingHorizontal="@dimen/default_margin"
+        android:visibility="gone">
+
+        <ImageView
+        android:id="@+id/imageSearchStatus"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_search_off_24"
+        app:tint="?android:attr/textColorSecondary"
+        android:layout_marginBottom="@dimen/default_top_margin"/>
+
+        <TextView
+            android:id="@+id/textSearchStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            tools:text="No results found, showing similar results..."
+            android:textColor="?android:attr/textColorSecondary" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewSearchResults"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/no_margin"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingTop="8dp"/>
+</LinearLayout>

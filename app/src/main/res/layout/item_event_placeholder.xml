@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/default_margin"
+    android:layout_marginVertical="@dimen/default_top_margin"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="@dimen/default_top_margin"
+    app:cardBackgroundColor="?attr/colorSurface">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/showme_gray_light"
+            android:alpha="0.3"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/default_margin"
+            android:paddingTop="@dimen/default_margin"
+            android:paddingBottom="@dimen/default_margin">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/showme_gray_light"
+                android:alpha="0.3"
+                android:layout_marginBottom="@dimen/default_top_margin"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_margin"
+                android:background="@color/showme_gray_light"
+                android:alpha="0.3"
+                android:layout_marginEnd="64dp"
+                android:layout_marginBottom="4dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_margin"
+                android:background="@color/showme_gray_light"
+                android:alpha="0.3"
+                android:layout_marginEnd="100dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

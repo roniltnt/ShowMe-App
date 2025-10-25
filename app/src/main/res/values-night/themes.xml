@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.ShowMe" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="fontFamily">@font/suez_one</item>
+
+        <item name="colorPrimary">@color/showme_red</item>
+        <item name="colorPrimaryVariant">@color/showme_red_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/showme_red</item>
+        <item name="colorSecondaryVariant">@color/showme_red_dark</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <item name="android:colorBackground">@color/showme_black</item>
+        <item name="colorSurface">@color/showme_gray_dark</item>
+        <item name="colorError">@color/showme_red_dark</item>
+
+        <item name="colorOnBackground">@color/white</item>
+        <item name="colorOnSurface">@color/white</item>
+        <item name="colorOnError">@color/white</item>
+        <item name="android:textColorSecondary">@color/showme_gray_light</item>
+
+        <item name="android:statusBarColor">@color/showme_gray_dark</item>
+
+    </style>
+
+    <style name="Theme.ShowMe.Fullscreen" parent="Theme.ShowMe">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>
